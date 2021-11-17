@@ -13,7 +13,7 @@
             string temp = "";
             int count = 1;
             
-            for(int j=1;j<=result.length();j++) {
+            for(int j=1;j<=result.length(); j++) {
                 if(result[j] != previous) {
                     temp = temp + to_string(count) + previous;
                     previous = result[j];
