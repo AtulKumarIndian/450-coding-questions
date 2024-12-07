@@ -1,17 +1,11 @@
+package linkedList;
+
+import static linkedList.Node.*;
+
+
 public class DeleteNthNodeFromEnd {
 
-    /*
- * printL function prints the linked list data 
-     */
-    public static void printLL(Node head) {
-        while (head != null) {
-            System.out.print(head.data + " ");
-            head = head.next;
-        }
-        System.out.println("");
-    }
-
-    public static Node DeleteNodefromEnd(Node head, int N) {
+      public static Node DeleteNodefromEnd(Node head, int N) {
 
         // create slow and fast pointers
         Node fast = head, slow = head;

@@ -5,18 +5,9 @@
  * 
  * 
  */
-
+package linkedList;
+import static linkedList.Node.*;
 public class MergeTwoSortedLL {
-
-    public static void printLL(Node head) {
-        while (head != null) {
-            System.out.print(head.data + " ");
-            head = head.next;
-        }
-        System.out.println("");
-        System.out.println("---------------");
-
-    }
 
     public static Node sortTwoLinkedLists(Node list1, Node list2) {
 
