@@ -14,7 +14,7 @@ public class IntersectionOfLists {
             //iterate head 2
             Node temp = head1;
             while (temp != null) {
-                //iterate head 1 - for each head1 check if its equal to temporary head2
+                //iterate for each head1 check if its equal to temporary head2
                 if (temp == head2) {
                     return head2;
                 }
@@ -41,12 +41,16 @@ public class IntersectionOfLists {
         head=insertNode(head,1);
         head=insertNode(head,2);
         head=insertNode(head,4);
+//        [1 -> 3 -> 1 -> 2 -> 4 ]
         Node head1 = head;
         head = head.next.next.next;
+//        head points to [2 -> 4]
         Node headSec = null;
         headSec=insertNode(headSec,3);
+//        [3]
         Node head2 = headSec;
         headSec.next = head;
+//        [3 -> 2 -> 4]
         //printing of the lists
         System.out.print("List1: ");
          printList(head1);
@@ -54,10 +58,8 @@ public class IntersectionOfLists {
         printList(head2);
         //checking if intersection is present
         Node answerNode = intersectionPoint(head1,head2);
-        if(answerNode == null)  
-        System.out.println("No intersection\n");
-        else
-        System.out.println("The intersection point is "+answerNode.data);
+        if(answerNode == null) System.out.println("No intersection");
+        else System.out.println("The intersection point is "+answerNode.data);
         
 
     }

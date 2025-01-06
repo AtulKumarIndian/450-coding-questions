@@ -29,7 +29,7 @@ public class MergeTwoSortedLL {
         }
         //move the temp data to next node
 
-        //if any list is has remaining elements, point them to this temp node
+        //if any list has remaining elements, point them to this temp node
         if (list1 != null) {
             temp.next = list1;
         } else {
@@ -37,6 +37,7 @@ public class MergeTwoSortedLL {
         }
 
         // The new list is in the DummyNode.next
+        // Why next because first node stores -1.
         return dummyNode.next;
     }
 

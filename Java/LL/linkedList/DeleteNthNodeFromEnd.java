@@ -11,7 +11,7 @@ public class DeleteNthNodeFromEnd {
         Node fast = head, slow = head;
 
         // Nth node from back means  (totalL - N + 1) from start   ex: - 2nd node from end  = (TotalL - 1) from Start
-        //traverse N times the Fast after that traverse slow and fast simaltaneously now Fast = tL   and slow = tL - N 
+        //traverse N times the Fast after that traverse slow and fast simultaneously now Fast = tL   and slow = tL - N
         for (int i = 0; i < N; i++) {
             fast = fast.next;
         }
@@ -21,7 +21,7 @@ public class DeleteNthNodeFromEnd {
             return head.next;
         }
 
-        //after that traverse slow and fast simaltaneously now Fast = tL   and slow = tL - N 
+        //after that traverse slow and fast simultaneously now Fast = tL   and slow = tL - N
         while (fast.next != null) {
             fast = fast.next;
             slow = slow.next;
