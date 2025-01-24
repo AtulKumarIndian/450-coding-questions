@@ -24,8 +24,8 @@ public class MinimumPlatforms {
         for(int i =0; i< n; i++){
             int count = 1;
             for(int j = i+1; j<n; j++){
-//                peeche(i) wala train arrives first, toh usko abhi(j) wale k ane k bad jana(dep[i]) hoga
-//                  abhi wala(j) wala arrive first toh abhi wala should leave after previous arrival
+//                prev(i) wala train arrives first, toh usko current(j) wale k ane k bad jana(dep[i]) hoga
+//                and if current wala(j) arrives first toh current wala(j) should depart after previous(i) arrival
                 if((arr[i]<=arr[j] && arr[j]<=dep[i]) || (arr[j]<=arr[i] && arr[i]<=dep[j])){
                     count++;
                 }
