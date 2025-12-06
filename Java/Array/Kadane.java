@@ -1,3 +1,4 @@
+//write docs for kadane
 public class Kadane {
     public static void main(String[] args) {
         int inputArr [] = {-2,1,-3,4,-1,2,1,-5,4};
